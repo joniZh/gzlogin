@@ -1,0 +1,272 @@
+
+.padre{
+  background: #ffffff;
+  height: 500px;
+  /*IMPORTANTE*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 135px;
+}
+.content{
+  width: 100%;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.hijo {
+  background: #38435e;
+  border-radius: 15px;
+  width: 1000px;
+  height: 475px;
+}
+.peq {
+  background: #f7f7f7;
+  float: left;
+  width: 380px;
+  height: 475px;
+}
+.mediano{
+  background: transparent;
+  position: relative;
+  float: left;
+  width: 380px;
+  height: 400px;
+}
+.form {
+  background: transparent;
+  position: relative;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 380px;
+  height: 400px;
+}
+
+.login {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+.form-group{
+  background: transparent;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 300px;
+    height: 60px;
+}
+.terminosC{
+  background: transparent;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 330px;
+    height: 118px;
+}
+.btn-send{
+  background: transparent;
+  padding-left: 60px;
+  padding-right: 30px;
+  padding-top: -7px;
+  width: 380px;
+  height: 40px;
+}
+.titulo{
+  width: 350px;
+    color: black;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+.titulo2{
+  background:transparent;
+  padding-left: 20px;
+  padding-top: 25px;
+  width: 550px;
+  height: 95px;
+  text-align: left;
+}
+.redesSocial{
+  background: transparent;
+  padding-left: 20px;
+  padding-top: 0px;
+  width: 550px;
+  height: 80px;
+}
+.imagen{
+  background:transparent;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 30px, 30px, 20px, 30px;
+  width: 550px;
+  height: 320px;
+}
+.imgImagen{
+  width: 100%;
+  height: 100%;
+}
+
+
+.imagenCentral{
+  width: 400px;
+  height: 453;
+}
+
+label {
+  color:  #0d0d0e;
+  display: block;
+  font-size: 10px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+input {
+  background: transparent;
+  border: 0;
+  color: #0e0d0d;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+  font-size:12px;
+}
+body {
+  font-family:Helvetica,Futura,Arial,Verdana,sans-serif;
+}
+.mat-checkbox{
+  font-size:8px;
+}
+p{
+  font-size: 10px;
+}
+a{
+  font-size: 12px;
+
+}
+.btn-primary{
+  font-size: 12px;
+    background: #ff6466;
+    border: #ff6466;
+    width: 160px;
+    height: 35px;
+}
+h3{
+  color:white;
+}
+.benviar{
+  padding-left:12px;
+  padding-right:12px;  
+
+}
+.social ul li .icon-facebook {background:#3b5998;}
+
+.facebook{
+  height:42px;
+  width: 42px;   
+  border-radius: 18px;
+}
+.instagram{
+  height: 42px;
+  width: 42px;  
+  border-radius: 15px;
+}
+.RS{
+  width: 54px;
+  height: 42px;
+  float: left;
+}
+.linksRS{
+  width: 169px;
+    float: left;
+}
+.check{
+  color: #ff6466;
+}
+.createAc{
+  padding-top: 6px;
+
+}
+.google-button {
+  height: 40px;
+  border-width: 0;
+  background: white;
+  color: #737373;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.05);
+  transition-property: background-color, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  padding: 0;   
+} 
+.google-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 0 8px 8px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+}
+
+.google-button__icon--plus {
+  width: 27px;
+}  
+.google-button__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto',arial,sans-serif;
+}
+/* .card{
+    background-color: #eee;
+}
+.google-button {
+    height: 40px;
+    border-width: 0;
+    background: white;
+    color: #737373;
+    border-radius: 5px;
+    white-space: nowrap;
+    box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.05);
+    transition-property: background-color, box-shadow;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    padding: 0;   
+  }      
+  .google-button__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 8px 0 8px 8px;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+  }
+  
+  .google-button__icon--plus {
+    width: 27px;
+  }  
+  .google-button__text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 24px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto',arial,sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button ~ button {
+    margin-left: 20px;
+  } */
+

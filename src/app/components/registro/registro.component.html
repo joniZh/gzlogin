@@ -1,0 +1,69 @@
+<div class="padre">
+        <div class="hijo">
+                <div class="content">
+                    <div class="peq">
+                            <div class="form">
+                                <h3 class="titulo">Register</h3>                     
+                                <form  [formGroup]="formRegistrar" (submit)="onLogin(formRegistrar)" >                                                        
+                                    <div class="form-group">
+                                        <mat-form-field appearance="legacy">
+                                            <mat-label>E-MAIL</mat-label>
+                                            <input matInput type="email" formControlName="email" id="email" name="email"  placeholder="jonizh@gmail.com" ngModel required>
+                                            <mat-icon matSuffix>mail</mat-icon>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="form-group">
+                                        <mat-form-field appearance="legacy">
+                                            <mat-label>PASSWORD</mat-label>
+                                            <input matInput type="password" formControlName="password" id="password" name="password"  placeholder="password" ngModel required>
+                                            <mat-icon matSuffix>lock</mat-icon>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="terminosC">                                
+                                        <mat-checkbox formControlName="hideRequired">i agree for processing  my personal data</mat-checkbox>
+                                        <mat-checkbox formControlName="hideRequired">i've  read provaty policy, <a href="">terms of service</a></mat-checkbox>
+                                        <mat-checkbox formControlName="hideRequired">i want  to receive e-mail messages from  bookMars </mat-checkbox>
+                                    </div>
+                                    <div class="alert alert-danger text-center" role="alert" *ngIf="formRegistrar.get('email') && formRegistrar.get('password').dirty || formRegistrar.get('email')&& formRegistrar.get('password').touched  " >
+                                            <p *ngIf="formRegistrar.get('email').hasError('required')">e-mail field wanted</p>
+                                            <p *ngIf="formRegistrar.get('email').hasError('email')">e-mail field wanted</p>
+                                            <p *ngIf="formRegistrar.get('password').hasError('required')">password field wanted</p>   
+                                        </div>
+                                    <div class="btn-send">
+                                        <button type="submit" [disabled]="formRegistrar.invalid" class="btn btn-primary btn-block">REGISTER</button>
+                                    </div> 
+                                    <p>Already have an account? <a routerLink="/login">Login</a></p>        
+                                    <p class="createAc">Create you account with:</p>   
+                            <div class="linksRS"> 
+                                <button class="btn btn-link"><a  href="">Google</a></button>
+                                <button class="btn btn-link"><a href="">Facebook</a> </button>
+                            </div>                                                                                    
+                                </form>
+                            </div>
+                    </div>
+                    <div class="mediano">
+                        <div class="titulo2">
+                            <h3>Gazelook </h3>
+                        </div>
+                        <div class="imagen">
+                            <img src=" " alt="imagen" class="imgImagen">
+                            </div>
+                        <div class="redesSocial">                           
+                            <div class="RS">
+                                <img class="facebook" src="https://2.bp.blogspot.com/-28mh2hZK3HE/XCrIxxSCW0I/AAAAAAAAH_M/XniFGT5c2lsaVNgf7UTbPufVmIkBPnWQQCLcBGAs/s1600/facebook.png">
+                            </div>
+                            <div class="RS">
+                                <img class="instagram" src="https://4.bp.blogspot.com/-Ilxti1UuUuI/XCrIy6hBAcI/AAAAAAAAH_k/QV5KbuB9p3QB064J08W2v-YRiuslTZnLgCLcBGAs/s1600/instagram.png">
+                            </div>
+                        </div>                            
+                    </div>
+                    <div>
+    
+                    </div>   
+                                                         
+                </div>
+        </div>
+                
+    
+    </div>
+

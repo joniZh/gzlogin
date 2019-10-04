@@ -1,0 +1,84 @@
+<div class="padre">
+    <div class="hijo">
+        <div class="content">
+            <div class="peq">
+                    <div class="form">
+                        <h3 class="titulo">login</h3>                     
+                        <form  [formGroup]="formLogin" (submit)="onLogin(formLogin)" >                                                        
+                            <div class="form-group">
+                                <mat-form-field appearance="legacy">
+                                    <mat-label>E-MAIL</mat-label>
+                                    <input matInput type="email" formControlName="email" id="email" name="email"  placeholder="jonizh@gmail.com" ngModel required>
+                                    <mat-icon matSuffix>mail</mat-icon>
+                                </mat-form-field>
+                            </div>
+                            <div class="form-group">
+                                <mat-form-field appearance="legacy">
+                                    <mat-label>PASSWORD</mat-label>
+                                    <input matInput type="password" formControlName="password" id="password" name="password"  placeholder="password" ngModel required>
+                                    <mat-icon matSuffix>lock</mat-icon>
+                                </mat-form-field>
+                            </div>
+                            <!-- <div class="terminosC">                                
+                                <mat-checkbox class="ckeck" formControlName="hideRequired">i agree for processing  my personal data</mat-checkbox>
+                                <mat-checkbox formControlName="hideRequired">i've  read provaty policy, <a href="">terms of service</a></mat-checkbox>
+                                <mat-checkbox formControlName="hide Required">i want  to receive e-mail messages from  bookMars </mat-checkbox>
+                            </div> -->
+                            <div class="alert alert-danger text-center" role="alert" *ngIf="formLogin.get('email') && formLogin.get('password').dirty || formLogin.get('email')&& formLogin.get('password').touched " >
+                                <p *ngIf="formLogin.get('email').hasError('required')">e-mail field wanted</p>
+                                <p *ngIf="formLogin.get('email').hasError('email')">e-mail field wanted</p>
+                                <p *ngIf="formLogin.get('password').hasError('required')">password field wanted</p>   
+                            </div>
+                            <div class="btn-send">
+                                <button type="submit" [disabled]="formLogin.invalid" class="btn btn-primary btn-block">SEND</button>
+                            </div> 
+                            <p class="text-left"><a href="" >Recuperar contraseña</a></p>
+                            <p>Already have an account? <a routerLink="/registro">Sign up</a></p>                   
+                            <p class="createAc">Create you account with:</p>   
+                            <div class="linksRS"> 
+                                <button class="btn btn-link"><a  href="">Google</a></button>
+                                <button class="btn btn-link"><a href="">Facebook</a> </button>
+                            </div>                                                                                     
+                        </form>
+                    </div>
+            </div>
+            <div class="mediano">
+                <div class="titulo2">
+                    <h3>Gazelook </h3>
+                </div>
+                <div class="imagen">
+                    <img src=" " alt="imagen" class="imgImagen">
+                    </div>
+                <div class="redesSocial">                           
+                    <div class="RS">
+                        <img class="facebook" src="https://2.bp.blogspot.com/-28mh2hZK3HE/XCrIxxSCW0I/AAAAAAAAH_M/XniFGT5c2lsaVNgf7UTbPufVmIkBPnWQQCLcBGAs/s1600/facebook.png">
+                    </div>
+                    <div class="RS">
+                        <img class="instagram" src="https://4.bp.blogspot.com/-Ilxti1UuUuI/XCrIy6hBAcI/AAAAAAAAH_k/QV5KbuB9p3QB064J08W2v-YRiuslTZnLgCLcBGAs/s1600/instagram.png">
+                    </div>
+                </div>                        
+            </div>                                  
+        </div>
+    </div>
+            
+
+</div>
+        <!--<div class="left">
+                        <div class="form">
+                              <label for="email">Email</label>
+                              <input type="email" id="email">
+                              <label for="password">Password</label>
+                              <input type="password" id="password">
+                              <input type="submit" id="submit" value="Submit">
+                            </div>
+                          </div>
+            
+            <div class="right">
+            <div class="form">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </div>  -->
